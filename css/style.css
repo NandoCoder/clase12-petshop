@@ -19,6 +19,7 @@ body {
 .barra-1 {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   background-color: #222222;
   color: #f3f3f3;
@@ -53,6 +54,7 @@ body {
 
 .barra-2 {
   display: flex;
+  flex-wrap: wrap;
   padding: 20px;
   justify-content: space-between;
   align-items: center;
@@ -241,13 +243,13 @@ body {
   margin-top: 120px;
 }
 
-.newsletter h2 {
-  position: relative;
-  right: 300px;
+.suscribete {
+  display: flex;
 }
 
 .newsletter img {
   height: 25px;
+  margin-right: 5px;
 }
 
 .newsletter-input {
@@ -267,46 +269,32 @@ body {
 
 /* footer */
 
+footer {
+  background-color: #3c2313;
+}
+
 footer section {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  flex: row;
-  background-color: #3c2313;
+  align-items: center;
+  padding: 20px 50px;
   color: #ffffff;
-  padding: 15px;
 }
 
 .footer-icon {
-  margin-top: 10px;
-  margin-left: 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.footer-info {
-  position: relative;
-  right: 500px;
-  display: flex;
-  gap: 30px;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: 700;
-  font-size: 20px;
+  width: 40px;
+  margin: 0 5px;
 }
 
-.footer-logo {
-  margin-right: 50px;
-  display: flex;
-  flex-direction: row;
-  height: 25px;
+.footer-info {
+  margin-bottom: 10px;
 }
 
 span {
   font-size: 10px;
   color: #8a8787;
   opacity: 0.8;
+  margin-left: 50px;
 }
 
 .barra-negra-footer {
@@ -319,7 +307,17 @@ span {
   padding: 10px;
 }
 
-.correo {
-  position: relative;
-  left: 40px;
+@media (max-width: 768px) {
+  .newsletter h2 {
+    font-size: 0.8em;
+  }
+  .newsletter-input {
+    width: 150px;
+  }
+  .newsletter-submit {
+    padding: 7px;
+  }
+  .footer-info {
+    font-size: 1.1em;
+  }
 }
