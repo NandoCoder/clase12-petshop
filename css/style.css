@@ -365,7 +365,7 @@ span {
     text-decoration: underline;
   }
   #hamburger-menu #sidebar-menu {
-    visibilty: hidden;
+    visibility: hidden;
     position: fixed;
     top: 0;
     right: -250px;
